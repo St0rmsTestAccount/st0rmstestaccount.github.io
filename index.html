@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>St0rm's Test Site</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
 
@@ -14,8 +15,21 @@
                 background-size: 100%;
                 background-position: 0;
                 overflow: auto;
-
+                z-index: 50;
             }
+
+            body div p.norm {
+                background-color:black;
+                color: white;
+                border: 2px solid darkgoldenrod;
+                border-width: 2px;
+                border-radius: 5px;
+                padding-left: 2px;
+                padding-right: 2px;
+                max-width: 152px;
+            }
+
+            body div p.norm a{color:darkturquoise}
 
             ul.topnav {
                 list-style-type: none;
@@ -23,6 +37,7 @@
                 padding: 0;
                 overflow: hidden;
                 background-color: #333;
+                z-index: 100;
             }
 
             ul.topnav li {float: left;}
@@ -37,7 +52,7 @@
 
             ul.topnav li a:hover:not(.active) {background-color: #111;}
 
-            ul.topnav li a.active {background-color: #04AA6D;}
+            ul.topnav li a.active {background-color: darkturquoise; color: black}
 
             ul.topnav li.right {float: right;}
 
@@ -48,18 +63,21 @@
 
             .dropdown {
                 position: relative;
-                display: inline-block;
+                left: 0;
+                display:block;
+                z-index: 101;
             }
               
             .dropdown-content {
                 display: none;
-                position: absolute;
+                position: relative;
                 background-color: #f9f9f9;
                 color: black;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                /*width: 100%;*/
+                max-height: 200px;
+                box-shadow: white;
                 padding: 12px 16px;
-                z-index: 1;
+                margin-top: 13px;
             }
               
             .dropdown:hover .dropdown-content {
@@ -71,57 +89,62 @@
 
     <body>
 
-        <div class="dropdown">
-            <ul class="topnav">
-                <li>
-                    <a class="active" href="#home">
+        <ul class="topnav">
+            <li> <!-- "Home" on navigation bar -->
+                <a class="active" href="#home">
+                    Home
+                </a>
+            </li>
+            
+            <div class="dropdown"> <!-- dropdown for "News" & "Scripts"-->
+                <li> <!-- "Scripts" on navigation bar-->
+                    <a href="#News">
                         <span>
-                            Home
+                            News
+                            <div class="dropdown-content">
+                                <p>
+                                    Hello World!
+                                </p>
+                            </div>
                         </span>
-                        <div class="dropdown-content">
-                            <p>
-                                Hello World!
-                            </p>
-                        </div>
                     </a>
                 </li>
-                <li>
-                    <a href="#news">
-                        News
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">
-                        Contact
-                    </a>
-                </li>
-                <li class="right">
-                    <a href="#about">
-                        About
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="dropdown">
-            <span>Mouse over me</span>
-            <div class="dropdown-content">
-            <p>Hello World!</p>
             </div>
-        </div>
+
+            <div class="dropdown"> <!-- dropdown for "News" & "Scripts"-->
+                <li> <!-- "Scripts" on navigation bar-->
+                    <a href="#scripts">
+                        <span>
+                            Scripts
+                            <div class="dropdown-content">
+                                <p>
+                                    Hello World!
+                                </p>
+                            </div>
+                        </span>
+                    </a>
+                </li>
+            </div>
+
+            <li> <!-- "Contact" on navigation bar -->
+                <a href="#contact">
+                    Contact
+                </a>
+            </li>
+
+            <li class="right"> <!-- "About" on navigation bar -->
+                <a href="#about">
+                    About
+                </a>
+            </li>
+
+        </ul>
 
         <div style="padding:0 16px;">
-            <p>
+            <p class='norm'>
                 I am hosted on <a href="https://github.com/St0rmsTestAccount/st0rmstestaccount.github.io">GitHub</a>!
             </p>
         </div>
-
-    </body>
-
-</html>
-<!--
-        <h1>Hello World</h1>
-        <p>I am hosted on <a href="https://github.com/St0rmsTestAccount/st0rmstestaccount.github.io">GitHub</a>!</p>
 
     </body>
 
