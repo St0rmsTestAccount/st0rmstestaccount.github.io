@@ -1,42 +1,127 @@
 <!DOCTYPE html>
 <html>
-
     <head>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
 
             body {
-                background-color: white;
+                margin: 0;
+                background-color: black;
+                color: white;
                 background-image: url('Assets/Background.jpg');
                 background-repeat: no-repeat;
                 background-attachment: fixed;
+                background-size: 100%;
+                background-position: 0;
+                overflow: auto;
+
             }
 
-            h1 {
-                color: white
+            ul.topnav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
             }
 
-            p {
-                color: darkgoldenrod
+            ul.topnav li {float: left;}
+
+            ul.topnav li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+            ul.topnav li a.active {background-color: #04AA6D;}
+
+            ul.topnav li.right {float: right;}
+
+            @media screen and (max-width: 600px) {
+                ul.topnav li.right, 
+                ul.topnav li {float: none;}
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+              
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                color: black;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                padding: 12px 16px;
+                z-index: 1;
+            }
+              
+            .dropdown:hover .dropdown-content {
+                display: block;
             }
 
         </style>
-
-        <title>
-            St0rm's Test Site
-        </title>
-
     </head>
 
     <body>
 
-        <h1>
-            Hello World
-        </h1>
+        <div class="dropdown">
+            <ul class="topnav">
+                <li>
+                    <a class="active" href="#home">
+                        <span>
+                            Home
+                        </span>
+                        <div class="dropdown-content">
+                            <p>
+                                Hello World!
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#news">
+                        News
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+                <li class="right">
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-        <p>
-            I am hosted on <a href="https://github.com/St0rmsTestAccount/st0rmstestaccount.github.io">GitHub</a>
-        </p>
+        <div class="dropdown">
+            <span>Mouse over me</span>
+            <div class="dropdown-content">
+            <p>Hello World!</p>
+            </div>
+        </div>
+
+        <div style="padding:0 16px;">
+            <p>
+                I am hosted on <a href="https://github.com/St0rmsTestAccount/st0rmstestaccount.github.io">GitHub</a>!
+            </p>
+        </div>
+
+    </body>
+
+</html>
+<!--
+        <h1>Hello World</h1>
+        <p>I am hosted on <a href="https://github.com/St0rmsTestAccount/st0rmstestaccount.github.io">GitHub</a>!</p>
 
     </body>
 
