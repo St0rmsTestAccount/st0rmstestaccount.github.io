@@ -1,0 +1,8 @@
+Landscape view is a 16:9 Ratio
+- Example:
+- 1920:1080 = 16:9
+
+Mobile view is a 9:16 Ratio
+- Example:
+- 1080:~607.5 = 9:16
+(Yes I know this is not a proper scaling I just couldn't be bothered looking it up)
