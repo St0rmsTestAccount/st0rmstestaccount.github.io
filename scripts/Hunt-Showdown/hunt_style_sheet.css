@@ -3,17 +3,11 @@ body {
     background-repeat: no-repeat;
     position: 0;
     z-index: 1;
-<<<<<<< HEAD
 
     padding-top:20px;
     overflow:hidden;
 }
 
-=======
-    padding-top:20px;
-    overflow:hidden;
-}
->>>>>>> Experimental
 .background {
     background-color: black;
     background-image: url('Hunt_Assets/bgSecondary.jpg');
@@ -25,26 +19,22 @@ body {
     overflow: scroll;
     z-index: -100000;
 }
-<<<<<<< HEAD
 
 body.background div.container p {
     max-width: 500px;
     z-index: 0;
-    
-=======
+}    
+
 body.background div.container p {
     max-width: 500px;
     z-index: 0;      
->>>>>>> Experimental
+
     position: relative;
     margin-top: 0;
     padding-top: 5px;
     padding-left: 5px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> Experimental
 .container {
     color: white; /* Sets font color to vibrant red */
     background-color: black;
@@ -55,7 +45,6 @@ body.background div.container p {
     display:hidden;
     z-index: 0;
 }
-<<<<<<< HEAD
 
 .traits {
     z-index:10;
@@ -65,14 +54,6 @@ div.traits img {
     z-index:11;
     display:block;
 
-=======
-.traits {
-    z-index:10;
-}
-div.traits img {
-    z-index:11;
-    display:block;
->>>>>>> Experimental
     max-width: 400px;
     height:auto;
 
@@ -80,36 +61,7 @@ div.traits img {
     bottom:50px;
     right:65px;
 }
-<<<<<<< HEAD
 
-.tools {
-    z-index: 10;
-}
-
-div.tools img{
-    z-index:11;
-    display:block;
-
-    max-width: 300px;
-    height:auto;
-
-    position: relative;
-    top:280px;
-    margin-bottom: 30px;
-    margin-right: 65px;
-    margin-left: auto;
-
-    padding-bottom: 10px;
-}
-
-.randomButton {
-    z-index: 10;
-}
-
-div.randomButton img{
-    z-index:11;
-    display:block;
-=======
 .tools {
     z-index: 10;
 }
@@ -140,6 +92,7 @@ div.consumables img{
     left:auto;
     right:65px;
 }
+
 .secondary {
     z-index: 10;
 }
@@ -155,6 +108,7 @@ div.secondary img{
     left:auto;
     right:65px;
 }
+
 .primary {
     z-index: 10;
 }
@@ -170,28 +124,20 @@ div.primary img{
     left:auto;
     right:65px;
 }
+
 .randomButton {
     z-index: 10;
 }
 div.randomButton img{
     z-index:11;
     display:inline-block;
->>>>>>> Experimental
 
     max-width: 300px;
     height:auto;
 
     position:absolute;
     bottom:50px;
-<<<<<<< HEAD
 }
 
 @media screen and (max-width: 600px) {
-    
-=======
-    left: 65px;
-
-}
-@media screen and (max-width: 600px) {
->>>>>>> Experimental
 }
