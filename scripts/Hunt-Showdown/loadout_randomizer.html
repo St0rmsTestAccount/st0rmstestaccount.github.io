@@ -12,6 +12,7 @@
                 z-index: 1;
 
                 padding-top:20px;
+                overflow:hidden;
             }
 
             .background {
@@ -22,7 +23,7 @@
                 background-size:100%;
                 width:100%;
                 height:auto;
-                overflow: hidden;
+                overflow: scroll;
                 z-index: -100000;
             }
 
@@ -51,7 +52,7 @@
             }
 
             div.traits img {
-                z-index:inherit+1;
+                z-index:11;
                 display:block;
 
                 max-width: 400px;
@@ -67,8 +68,17 @@
             }
 
             div.tools img{
-                z-index:inherit+1;
-                display:block
+                z-index:11;
+                display:block;
+
+                max-width: 300px;
+                height:auto;
+
+                position: relative;
+                margin-right: 20px;
+                margin-left: auto;
+
+                padding-bottom: 10px;
             }
 
 
@@ -93,6 +103,11 @@
         <div class='traits'>
             <img src='Hunt_Assets/Custom Pieces/blank_traits_WOODEN.png'>
         </div>
+
+        <div class='tools'>
+            <img src='Hunt_Assets/Custom Pieces/blank add-ons WOODEN.png'>
+        </div>
+
     </body>
 
 </html>
