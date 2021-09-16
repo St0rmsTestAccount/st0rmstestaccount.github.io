@@ -57,11 +57,56 @@ div.tools img{
     max-width: 300px;
     height:auto;
 
-    position: relative;
-    top:300px;
-    margin-right: 65px;
-    margin-left: auto;
-    padding-bottom: 20px;
+    position: absolute;
+    top:auto;
+    bottom:285px;
+    left:auto;
+    right:65px;
+}
+.consumables {
+    z-index: 10;
+}
+div.consumables img{
+    z-index:11;
+    display:block;
+    max-width: 300px;
+    height:auto;
+
+    position: absolute;
+    top:auto;
+    bottom:395px;
+    left:auto;
+    right:65px;
+}
+.secondary {
+    z-index: 10;
+}
+div.secondary img{
+    z-index:11;
+    display:block;
+    max-width: 300px;
+    height:auto;
+
+    position: absolute;
+    top:auto;
+    bottom:510px;
+    left:auto;
+    right:65px;
+}
+.primary {
+    z-index: 10;
+}
+div.primary img{
+    z-index:11;
+    display:block;
+    max-width: 300px;
+    height:auto;
+
+    position: absolute;
+    top:auto;
+    bottom:610px;
+    left:auto;
+    right:65px;
 }
 .randomButton {
     z-index: 10;
