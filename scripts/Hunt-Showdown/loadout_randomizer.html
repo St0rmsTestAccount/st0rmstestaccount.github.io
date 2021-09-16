@@ -6,10 +6,13 @@
         <style>
 
             body {
-                margin: 0;
                 background-color: black;
-                color: white;
-                background-image: url('../Assets/Desktop_Background.jpg');
+                background-repeat: no-repeat;
+            }
+
+            body.background {
+                background-color: black;
+                background-image: url('Hunt_Assets/bgMain.png');
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: 100%;
@@ -18,148 +21,37 @@
                 z-index: 50;
             }
 
-            body div p.norm {
-                background-color:black;
-                color: white;
-                border: 2px solid darkgoldenrod;
-                border-width: 2px;
-                border-radius: 5px;
-                padding-left: 2px;
-                padding-right: 2px;
-                max-width: 152px;
+            body.background div.container p {
+                max-width: 500px;
             }
 
-            body div p.norm a{color:darkturquoise}
-
-            ul.topnav {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-                z-index: 100;
-            }
-
-            ul.topnav li {float: left;}
-
-            ul.topnav li a {
+            .container {
+                color: #ff3333; /* Sets font color to vibrant red */
+                background-color: black;
+                max-width: 500px;
+                max-height: 510px;
                 display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
+                overflow:auto;
             }
 
-            ul.topnav li a:hover:not(.active) {background-color: #111;}
 
-            ul.topnav li a.active {background-color: darkturquoise; color: black}
-
-            ul.topnav li.right {float: right;}
-
-            @media screen and (max-width: 600px) {
-                ul.topnav li.right, 
-                ul.topnav li {float: none;}
-
-                body {
-                    margin: 0;
-                    background-color: black;
-                    color: white;
-                    background-image: url('../Assets/Mobile_Background.jpg');
-                    background-repeat: no-repeat;
-                    background-attachment: fixed;
-                    background-size: 100%;
-                    background-position: 0;
-                    overflow: auto;
-                    z-index: 50;
-                }
-            }
-
-            .dropdown {
-                position: relative;
-                left: 0;
-                display:block;
-                z-index: 101;
-            }
-              
-            .dropdown-content {
-                display: none;
-                position: relative;
-                background-color: #f9f9f9;
-                color: black;
-                /*width: 100%;*/
-                max-height: 200px;
-                box-shadow: white;
-                padding: 12px 16px;
-                margin-top: 13px;
-            }
-              
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-
+            /* @media screen and (max-width: 600px) { */
         </style>
     </head>
-
-    <body>
-
-        <ul class="topnav">
-            <li> <!-- "Home" on navigation bar -->
-                <a class="active" href="https://st0rmstestaccount.github.io/">
-                    Home
-                </a>
-            </li>
-            
-            <div class="dropdown"> <!-- dropdown for "News" & "Scripts"-->
-                <li> <!-- "Scripts" on navigation bar-->
-                    <a href="#News">
-                        <span>
-                            News
-                            <div class="dropdown-content">
-                                <p>
-                                    Hello World!
-                                </p>
-                            </div>
-                        </span>
-                    </a>
-                </li>
-            </div>
-
-            <div class="dropdown"> <!-- dropdown for "News" & "Scripts"-->
-                <li> <!-- "Scripts" on navigation bar-->
-                    <a href="#scripts">
-                        <span>
-                            Scripts
-                            <div class="dropdown-content">
-                                <p>
-                                    Hello World!
-                                    <a href="scripts/script_index.html">Click me</a>!
-                                </p>
-                            </div>
-                        </span>
-                    </a>
-                </li>
-            </div>
-
-            <li> <!-- "Contact" on navigation bar -->
-                <a href="#contact">
-                    Contact
-                </a>
-            </li>
-
-            <li class="right"> <!-- "About" on navigation bar -->
-                <a href="#about">
-                    About
-                </a>
-            </li>
-
-        </ul>
-
-        <div style="padding:0 16px;">
-            <p class='norm'>
-                I am hosted on <a href="https://github.com/St0rmsTestAccount/st0rmstestaccount.github.io">GitHub</a>!
+    
+    <body class='background'>
+        <div class='container'>
+            <p>
+                <b>Damage:</b> True damage value of a shot that hits a Hunter in the Upper-Torso at 10 meters.
+                <br><br><b>Effective Range:</b> The range (in meters) that weapons will kill a Hunter in one hit, usually a headshot. Some very powerful weapons will also kill with one hit to the Torso.
+                <br><br><b>Rate of Fire:</b> How many shots can be fired per minute, taking into account shot preparation without any other delay in-between (such as reloading).
+                <br><br><b>Handling:</b> An abstract rating of effectiveness taking into account; weapon sway, recoil and bullet spread. For melee weapons, this takes in account stamina consumption, reach and angle of the swing arc instead. The higher the percentage, the better the weapon handles.
+                <br><br><b>Reload Speed:</b> The time (in seconds) it takes to fully reload the weapon when empty, disregarding any special behaviors such as clip reloading.
+                <br><br><b>Muzzle Velocity:</b> The velocity (meters per second) which the fired bullet will travel at. Heavier projectiles ( such as crossbow bolts) also travel in a ballistic arc.
+                <br><br><b>Melee Damage:</b> True damage value of a regular melee attack that hits a Hunter in the Upper-Torso.
+                <br><br><b>Heavy Melee Damage:</b> True damage value of a charged heavy melee attack that hits a Hunter in the Upper-Torso.
             </p>
         </div>
-
     </body>
 
 </html>
