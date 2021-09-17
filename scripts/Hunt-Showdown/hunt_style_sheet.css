@@ -49,6 +49,7 @@ body.background {
     z-index:0;
     max-width: 360;
     overflow:auto;
+    float:left;
 }
 
 div.column1 div.termBox{
@@ -71,11 +72,23 @@ div.column1 div.termBox div.reference{
 .column2{
     z-index:0;
     max-width: 360px;
+    padding-left: auto;
+    padding-right:auto;
+
+    float: right;
 }
 
 .column3{
     z-index: 0;
     max-width: 360px;
+    width:max-content;
+    display: hidden;
+    float:right;
+}
+.column4{
+    z-index: 0;
+    max-width: 360px;
+    float:right;
 }
 
 .row1{
