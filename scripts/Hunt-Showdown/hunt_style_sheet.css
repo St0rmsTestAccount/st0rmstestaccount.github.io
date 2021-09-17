@@ -1,143 +1,91 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+}
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+}
+
 body {
     background-color: black;
     background-repeat: no-repeat;
     position: 0;
     z-index: 1;
+    font-family:'Courier New', Courier, monospace;
+    font-size:larger;
 
     padding-top:20px;
-    overflow:hidden;
+    overflow:scroll;
 }
 
-.background {
+body.background {
     background-color: black;
     background-image: url('Hunt_Assets/bgSecondary.jpg');
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size:100%;
-    width:100%;
+    max-width: fit-content;
+    width:auto;
     height:auto;
-    overflow: scroll;
     z-index: -100000;
+    overflow-x:hidden
 }
 
-body.background div.container p {
-    max-width: 500px;
-    z-index: 0;
-}    
-
-body.background div.container p {
-    max-width: 500px;
-    z-index: 0;      
-
-    position: relative;
-    margin-top: 0;
-    padding-top: 5px;
-    padding-left: 5px;
-}
-
-.container {
-    color: white; /* Sets font color to vibrant red */
-    background-color: black;
-    max-width: 500px;
-    max-height: 100px;
-    display: block;
+.column1{
+    z-index:0;
+    max-width: 360;
     overflow:auto;
-    display:hidden;
+}
+
+div.column1 div.termBox{
+    z-index: 10;
+    max-width:360px;
+    background-color: black;
+    opacity: .6;
+    margin:5px;
+    padding: 5px;
+}
+
+div.column1 div.termBox div.reference{
+    z-index: 10;
+    max-width: inherit;
+    opacity: 1;
+    margin:5px;
+    padding: 5px;
+}
+
+.column2{
+    z-index:0;
+    max-width: 360px;
+}
+
+.column3{
     z-index: 0;
+    max-width: 360px;
 }
 
-.traits {
-    z-index:10;
+.row1{
+    z-index:1;
 }
 
-div.traits img {
-    z-index:11;
-    display:block;
-
-    max-width: 400px;
-    height:auto;
-
-    position:absolute;
-    bottom:50px;
-    right:65px;
+.row2{
+    z-index:1;
 }
 
-.tools {
-    z-index: 10;
-}
-div.tools img{
-    z-index:11;
-    display:block;
-    max-width: 300px;
-    height:auto;
-
-    position: absolute;
-    top:auto;
-    bottom:285px;
-    left:auto;
-    right:65px;
-}
-.consumables {
-    z-index: 10;
-}
-div.consumables img{
-    z-index:11;
-    display:block;
-    max-width: 300px;
-    height:auto;
-
-    position: absolute;
-    top:auto;
-    bottom:395px;
-    left:auto;
-    right:65px;
-}
-
-.secondary {
-    z-index: 10;
-}
-div.secondary img{
-    z-index:11;
-    display:block;
-    max-width: 300px;
-    height:auto;
-
-    position: absolute;
-    top:auto;
-    bottom:510px;
-    left:auto;
-    right:65px;
-}
-
-.primary {
-    z-index: 10;
-}
-div.primary img{
-    z-index:11;
-    display:block;
-    max-width: 300px;
-    height:auto;
-
-    position: absolute;
-    top:auto;
-    bottom:610px;
-    left:auto;
-    right:65px;
-}
-
-.randomButton {
-    z-index: 10;
-}
-div.randomButton img{
-    z-index:11;
-    display:inline-block;
-
-    max-width: 300px;
-    height:auto;
-
-    position:absolute;
-    bottom:50px;
-}
-
-@media screen and (max-width: 600px) {
+.row3{
+    z-index:1;
 }
