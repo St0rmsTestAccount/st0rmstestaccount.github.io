@@ -9,10 +9,16 @@
     </head>
     
     <body class='background'>
-        <div class='column1'>
-            <div class='termBox'>
-                <div class='reference'>
-                    <b>Damage:</b><br> True damage value of a shot that hits a Hunter in the Upper-Torso at 10 meters.
+        <table id='display_area'>
+            <!-- Row 1 -->
+            <tr id='display_area'>
+                <!--
+                    Each <td></td> is 1 column to the right
+                -->
+                <td id='column1'>
+                    <b>Damage:</b> True damage value of a shot that hits a Hunter in the Upper-Torso at 10 meters.
+                    <br><br>
+                    <b>Effective Range:</b><br> The range (in meters) that weapons will kill a Hunter in one hit, usually a headshot. Some very powerful weapons will also kill with one hit to the Torso.
                     <br><br>
                     <b>Effective Range:</b><br> The range (in meters) that weapons will kill a Hunter in one hit, usually a headshot. Some very powerful weapons will also kill with one hit to the Torso.
                     <br><br>
@@ -27,26 +33,19 @@
                     <b>Melee Damage:</b><br> True damage value of a regular melee attack that hits a Hunter in the Upper-Torso.
                     <br><br>
                     <b>Heavy Melee Damage:</b><br> True damage value of a charged heavy melee attack that hits a Hunter in the Upper-Torso.
-                </div>
-            </div>
-        </div>
-        <div class='column2'>
-            <img src='Hunt_Assets/Custom Pieces/randomize_button.png'>
-            <img src='Hunt_Assets/Custom Pieces/randomize_button.png'>
-            <img src='Hunt_Assets/Custom Pieces/randomize_button.png'>
-        </div>
-        <div class='column3'>
-            <img src='Hunt_Assets/Custom Pieces/randomize_button.png'>
-            <img src='Hunt_Assets/Custom Pieces/randomize_button.png'>
-            <img src='Hunt_Assets/Custom Pieces/randomize_button.png'>
-            <img src='Hunt_Assets/Custom Pieces/randomize_button.png'>
-        </div>
-        <div class='column4'>
-            <img src='Hunt_Assets/Custom Pieces/randomize_button.png'>
-            <img src='Hunt_Assets/Custom Pieces/randomize_button.png'>
-            <img src='Hunt_Assets/Custom Pieces/randomize_button.png'>
-            <img src='Hunt_Assets/Custom Pieces/randomize_button.png'>
-        </div>
+                </td>
+                <td id='column2'></td>
+                <td id='column3'>
+                    <input type='image' src='Hunt_Assets/Custom Pieces/randomize_button.png' alt='Randomizer Button'>
+                    <br><input type='image' src='Hunt_Assets/Custom Pieces/blank_large-weapon_slot_WOODEN.png' alt='Empty Primary'>
+                    <br><input type='image' src='Hunt_Assets/Custom Pieces/blank_large-weapon_slot_WOODEN.png' alt='Empty Secondary'>
+                    <br><input type='image' src='Hunt_Assets/Custom Pieces/blank add-ons WOODEN.png' alt='Empty Consumables'>
+                    <br><input type='image' src='Hunt_Assets/Custom Pieces/blank add-ons WOODEN.png' alt='Empty Tools'>
+                    <br><input type='image' src='Hunt_Assets/Custom Pieces/blank_traits_WOODEN.png' alt='Empty Traits'>
+                </td>
+            </tr>
+        </table>
+
     </body>
 
 </html>
