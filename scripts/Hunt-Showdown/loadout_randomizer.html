@@ -10,11 +10,21 @@
     
     <body class='background'>
         <table id='display_area'>
-            <!-- Row 1 -->
+            <!-- 
+                Row 1:
+                     Column 1  | Column 2    | Column 3
+                 1 ) Reference | Health Bar  | Randomize Button  |
+                 2 ) sheet --- | ----------- | ----------------- |
+                 3 ) --------- | ----------- | Primary Weapon -- |
+                 4 ) --------- | ----------- | Secondary Weapon  |
+                 5 ) --------- | Character - | ----------------- |
+                 6 ) --------- | Consumables | ----------------- |
+                 7 ) --------- | Tools ----- | Traits ---------- |
+            -->
             <tr id='display_area'>
-                <!--
-                    Each <td></td> is 1 column to the right
-                -->
+                <!-- Each <td></td> is 1 column to the right -->
+
+                <!-- Reference sheet -->
                 <td id='column1'>
                     <b>Damage:</b> True damage value of a shot that hits a Hunter in the Upper-Torso at 10 meters.
                     <br><br>
@@ -34,15 +44,63 @@
                     <br><br>
                     <b>Heavy Melee Damage:</b><br> True damage value of a charged heavy melee attack that hits a Hunter in the Upper-Torso.
                 </td>
-                <td id='column2'></td>
+                <!-- Health Bar -->
+                <td></td>
+                <!-- Randomize button -->
                 <td id='column3'>
-                    <input type='image' src='Hunt_Assets/Custom Pieces/randomize_button.png' alt='Randomizer Button'>
-                    <br><input type='image' src='Hunt_Assets/Custom Pieces/blank_large-weapon_slot_WOODEN.png' alt='Empty Primary'>
-                    <br><input type='image' src='Hunt_Assets/Custom Pieces/blank_large-weapon_slot_WOODEN.png' alt='Empty Secondary'>
-                    <br><input type='image' src='Hunt_Assets/Custom Pieces/blank add-ons WOODEN.png' alt='Empty Consumables'>
-                    <br><input type='image' src='Hunt_Assets/Custom Pieces/blank add-ons WOODEN.png' alt='Empty Tools'>
-                    <br><input type='image' src='Hunt_Assets/Custom Pieces/blank_traits_WOODEN.png' alt='Empty Traits'>
+                    <input type='image' src='Hunt_Assets/Custom Pieces/randomize_button.png' id='c3r1' alt='Randomizer Button' value=''>
+                    <script>
+                        
+                    </script>
                 </td>
+            </tr>
+            <!-- 
+                Row 2:
+                 1 ) --------- | Character -- | Primary ---------
+            -->
+            <tr id='row2'>
+                <!--  -->
+                <td id='column1'></td>
+                <!-- Character -->
+                <td id='column2'><input type='image' src='Hunt_Assets/Custom Pieces/mystery_male.png' id='c2r2' alt='Unknown Character'></td>
+                <!-- Primary -->
+                <td id='column3'><input type='image' src='Hunt_Assets/Custom Pieces/blank_large-weapon_slot_WOODEN.png' id='c3r2' alt='No Primary'></td>
+            </tr>
+            <!-- 
+                Row 3:
+                 2 ) sheet --- | ----------------- | Secondary -------
+            -->
+            <tr id='row3'>
+                <!--  -->
+                <td id='column1'></td>
+                <!--  -->
+                <td id='column2'></td>
+                <!-- Secondary -->
+                <td id='column3'><input type='image' src='Hunt_Assets/Custom Pieces/blank_large-weapon_slot_WOODEN.png' id='c3r3' alt='No Secondary'></td>
+            </tr>
+            <!-- 
+                Row 4:
+                 3 ) --------- | Consumables | Traits -------
+            -->
+            <tr id='row4'>
+                <!--  -->
+                <td id='column1'></td>
+                <!-- Consumables -->
+                <td id='column2'><input type='image' src='Hunt_Assets/Custom Pieces/blank add-ons WOODEN.png' id='c2r4' alt='Empty Traits'></td>
+                <!-- Traits -->
+                <td id='column3'><input type='image' src='Hunt_Assets/Custom Pieces/blank_traits_WOODEN.png' id='c3r4' alt='Empty Traits'></td>
+            </tr>
+            <!-- 
+                Row 5:
+                 4 ) --------- | Tools ----- | -----------
+            -->
+            <tr id='row5'>
+                <!--  -->
+                <td id='column1'></td>
+                <!-- Tools -->
+                <td id='column2'><input type='image' src='Hunt_Assets/Custom Pieces/blank add-ons WOODEN.png' id='c2r5' alt='Empty Tools'></td>
+                <!--  -->
+                <td id='column3'></td>
             </tr>
         </table>
 

@@ -48,6 +48,8 @@ th, td {
     width: 34%;
 }
 table{
+    table-layout:fixed;
+    border-collapse:collapse;
     width:100%;
     text-align:left;
     vertical-align:top
@@ -63,10 +65,28 @@ table{
 }
 #column2{
     z-index: 0;
-    vertical-align: top;
+    max-height: 100%;
+    text-align:right;
+    vertical-align: bottom;
 }
 #column3{
     z-index: 0;
     text-align:right;
     vertical-align: top;
+}
+
+#c3r1 {
+    text-align:right;
+    vertical-align: top;
+    height:min-content;
+    padding-top: 10;
+    padding-bottom: 10;
+}
+
+#c3r2 {
+    text-align:right;
+    vertical-align: top;
+    height:min-content;
+    padding-top: 10;
+    padding-bottom: 10;
 }
