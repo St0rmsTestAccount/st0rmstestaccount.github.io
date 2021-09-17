@@ -15,9 +15,7 @@
 }
   @media only screen and (max-width:500px) {
     /* For mobile phones: */
-    .menu, .main, .right {
-      width: 100%;
-    }
+    body.background{background-image: url('Hunt_Assets/bgSecondary.jpg');}
 }
 
 body {
@@ -47,17 +45,28 @@ body.background {
 
 .column1{
     z-index:0;
-    max-width: 360;
+    max-width: 360px;
+    max-height: auto;
     overflow:auto;
-    float:left;
+    display: inline-block;
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:auto;
+    padding-left:5px;
+    padding-top:5px;
+    padding-right:auto;
+    padding-bottom: 15px;
 }
 
 div.column1 div.termBox{
     z-index: 10;
-    max-width:360px;
+    max-width:400px;
+    max-height:fit-content;
     background-color: black;
     opacity: .6;
     margin:5px;
+    margin-bottom: auto;
     padding: 5px;
 }
 
@@ -70,25 +79,23 @@ div.column1 div.termBox div.reference{
 }
 
 .column2{
-    z-index:0;
+    z-index:1;
     max-width: 360px;
-    padding-left: auto;
-    padding-right:auto;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 
-    float: right;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .column3{
     z-index: 0;
     max-width: 360px;
-    width:max-content;
-    display: hidden;
-    float:right;
-}
-.column4{
-    z-index: 0;
-    max-width: 360px;
-    float:right;
+    width:100%;
+    display: block;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .row1{
