@@ -15,7 +15,7 @@
 }
   @media only screen and (max-width:500px) {
     /* For mobile phones: */
-    body.background{background-image: url('Hunt_Assets/bgSecondary.jpg');}
+    body.background{background-image: url('Hunt_Assets/Mobile_Background');}
 }
 
 body {
