@@ -5,4 +5,4 @@ Repo is made and maintained by St0rmWalker and can be found @ https://www.twitch
 Repo url: https://github.com/St0rmsTestaccount/st0rmstestaccount.github.io
 
 
-All html files may be viewed at https://st0rmstestaccount.github.io
+All html files may be viewed at http://www.stormwalker.xyz/
